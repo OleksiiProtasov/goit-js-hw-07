@@ -1,3 +1,18 @@
+
+
+const itemsList = document.querySelectorAll('.item');
+
+Array.prototype.forEach.call(itemsList, (element) => {
+
+    const titleCategory = element.querySelector('h2').innerHTML;
+    const itemsLength = element.querySelectorAll('li').length;
+
+    console.log(`Категория: ${titleCategory} `);
+    console.log(`Количество элементов: ${itemsLength}`);
+});
+
+
+
 // Напиши скрипт, который выполнит следующие операции.
 
 // Посчитает и выведет в консоль количество категорий в `ul#categories`, то есть
@@ -11,6 +26,3 @@
 
 // - Категория: Животные
 // - Количество элементов: 4
-
-const valueCategori= document.querySelector('.item');
-console.log('Категории',valueCategori.textContent);
